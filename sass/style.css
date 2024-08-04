@@ -255,7 +255,7 @@ body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .slider
   width: 149px;
   min-height: 149px;
   filter: grayscale(100%);
-  transition: filter 0.3s;
+  transition: filter 0.4s;
 }
 body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .slider_de_cada_boxeador_y_las_flechas_de_abajo .div_con_todos_los_boxeadores_sin_las_flechas .div_de_los_luchadores_con_foto_y_fondo figure .imagenes_slider.en-centro {
   filter: grayscale(0%);
