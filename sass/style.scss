@@ -297,7 +297,12 @@ body {
                   .imagenes_slider{
                     width: 149px;
                     min-height: 149px;
-                    
+                    filter: grayscale(100%); // Aplicar filtro de escala de grises por defecto
+                    transition: filter 0.3s; // Transición suave al cambiar el filtro
+
+                    &.en-centro {
+                    filter: grayscale(0%); // Quitar filtro de escala de grises cuando está en el centro
+                    }
                   }
                 }
               }
