@@ -294,11 +294,11 @@ body {
                   
                   img {
                     
-                   //esto es un comentario para ver como funciona las actualizaciones en github
+                   //esto es un comentario para ver como funciona las actualizaciones en github 
                   }
                   .imagenes_slider{
                     width: 149px;
-                    min-height: 149px;
+                    min-height: 148px;
                     filter: grayscale(100%); // Aplicar filtro de escala de grises por defecto
                     transition: filter 0.4s; // Transición suave al cambiar el filtro
                     &.en-centro {
