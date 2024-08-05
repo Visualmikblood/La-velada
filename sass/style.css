@@ -211,6 +211,7 @@ body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .foto_g
   font-size: 3.75rem;
   line-height: 1;
   text-align: center;
+  text-shadow: 4px 3px 5px black;
 }
 body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .foto_grande_nombre_y_bandera .div_con_nombre_y_figure_con_bandera figure img {
   -webkit-mask-image: url(https://cdn.lavelada.dev/flags/maskflag.webp);
@@ -228,6 +229,7 @@ body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .slider
 body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .slider_de_cada_boxeador_y_las_flechas_de_abajo .div_con_todos_los_boxeadores_sin_las_flechas {
   scroll-snap-type: x mandatory;
   padding-left: 140px;
+  padding-right: 140px;
   display: flex;
   overflow-x: scroll;
   gap: 20px;

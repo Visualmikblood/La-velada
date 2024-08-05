@@ -248,6 +248,7 @@ body {
                 font-size: 3.75rem;
                 line-height: 1;
                 text-align: center;
+                text-shadow: 4px 3px 5px black;
               }
 
               figure {
@@ -267,6 +268,7 @@ body {
             .div_con_todos_los_boxeadores_sin_las_flechas {
               scroll-snap-type: x mandatory;
               padding-left: 140px;
+              padding-right: 140px;
               display: flex;
               overflow-x: scroll;
               gap: 20px;
@@ -292,7 +294,7 @@ body {
                   
                   img {
                     
-                   
+                   //esto es un comentario para ver como funciona las actualizaciones en github
                   }
                   .imagenes_slider{
                     width: 149px;
