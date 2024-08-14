@@ -1,6 +1,11 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
+}
+@font-face {
+  font-family: "yellow_jacket";
+  src: url(/fuentes/yellow_jacket/YELLOW.TTF);
 }
 
 body {
@@ -257,7 +262,7 @@ body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .slider
   width: 149px;
   min-height: 149px;
   filter: grayscale(100%);
-  transition: filter 0.4s;
+  transition: filter 0.3s;
 }
 body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .slider_de_cada_boxeador_y_las_flechas_de_abajo .div_con_todos_los_boxeadores_sin_las_flechas .div_de_los_luchadores_con_foto_y_fondo figure .imagenes_slider.en-centro {
   filter: grayscale(0%);
@@ -303,15 +308,20 @@ body .main .seccion_dos .div_de_presentacion_teatro p {
   color: rgb(212, 212, 212);
   line-height: 1.75rem;
   font-size: 17px;
+  position: relative; /* Añadido */
+  z-index: 2; /* Añadido */
 }
 body .main .seccion_dos .div_de_presentacion_teatro .div_con_svg_y_video {
   width: 100%;
   position: relative;
   top: -100px;
+  z-index: 1;
 }
 body .main .seccion_dos .div_de_presentacion_teatro .div_con_svg_y_video svg {
   width: 100%;
   filter: drop-shadow(1px 4px 90px rgb(241, 255, 170));
+  position: relative; /* Añadido */
+  z-index: 0; /* Añadido */
 }
 body .main .seccion_dos .div_de_directo_twitch {
   color: #fff;
@@ -358,12 +368,61 @@ body .main .seccion_dos .div_de_directo_twitch .segundo_hr_de__directo_twitch {
   border: 0 solid #e5e7eb;
   margin: 55px 0px;
 }
-body .main .seccion_dos .div_con_h3_y_contador h3 {
+body .main .seccion_dos .patrocinadores {
   color: #fff;
-  font-family: "Yellowjacket Condensed";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .main .seccion_dos .patrocinadores h3 {
+  font-weight: bold;
+}
+body .main .seccion_dos .patrocinadores p {
   text-align: center;
-  font-size: 33px;
-  margin-bottom: 64px;
+  font-size: 1.25rem;
+  margin-top: 16px;
+}
+body .main .seccion_dos .patrocinadores .div_con_todas_las_marcas {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+body .main .seccion_dos .patrocinadores .div_con_todas_las_marcas a {
+  background: linear-gradient(rgba(255, 255, 255, 0.1019607843) 0%, rgba(0, 0, 0, 0) 100%);
+  height: 6rem; /* Altura fija */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 1; /* Permite que crezca horizontalmente */
+  max-width: 100%; /* Asegura que no exceda el contenedor */
+  flex-wrap: wrap;
+}
+body .main .seccion_dos .patrocinadores .div_con_todas_las_marcas a img {
+  padding: 0px 1.25rem 0px 1.25rem;
+  box-sizing: border-box;
+  height: auto;
+  flex-grow: 1; /* Permite que crezca horizontalmente */
+  max-width: 100%; /* Asegura que no exceda el contenedor */
+}
+body .main .seccion_dos .patrocinadores .patrocioino_infojobs {
+  display: flex;
+  align-content: center;
+  margin-top: 80px;
+}
+body .main .seccion_dos .patrocinadores .patrocioino_infojobs p {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+body .main .seccion_dos .patrocinadores .patrocioino_infojobs p img {
+  width: 128px;
+  height: 32px;
+  margin-left: 20px;
+}
+body .main footer {
+  height: 300px;
 }
 
 #layer1 {
