@@ -92,7 +92,7 @@ body .main .seccion_uno #equis_grande {
 body .main .seccion_uno .a_de_seccion_uno_twitch {
   color: #fff;
   text-decoration: none;
-  font-family: "Yellowjacket Condensed";
+  font-family: "yellow_jacket";
   transform: rotate(-6deg);
   font-size: 1.5rem;
   margin-bottom: 20px;
@@ -166,7 +166,7 @@ body .main .seccion_dos .segunda_seccion_del_main {
 }
 body .main .seccion_dos .segunda_seccion_del_main h3 {
   color: #b4cd02;
-  font-family: "Yellowjacket Condensed";
+  font-family: "yellow_jacket";
   font-size: 4rem;
   line-height: 1;
   text-align: center;
@@ -211,7 +211,7 @@ body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .foto_g
   bottom: 2.5rem;
 }
 body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .foto_grande_nombre_y_bandera .div_con_nombre_y_figure_con_bandera p {
-  font-family: "Yellowjacket Condensed";
+  font-family: "yellow_jacket";
   color: #b4cd02;
   font-size: 3.75rem;
   line-height: 1;
@@ -352,7 +352,7 @@ body .main .seccion_dos .div_de_directo_twitch .a_de_directo_de_twitch .div_de_s
 }
 body .main .seccion_dos .div_de_directo_twitch .a_de_directo_de_twitch .div_de_span_y_h2_de_directo_de_twitch span {
   color: #fff;
-  font-family: "Yellowjacket Condensed";
+  font-family: "yellow_jacket";
   font-size: 30px;
   transform: rotate(-6deg);
 }
