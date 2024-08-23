@@ -3,12 +3,236 @@
   padding: 0px;
   @font-face {
     font-family: "yellow_jacket";
-    src: url(/fuentes/yellow_jacket/YELLOW.TTF);
+    src: url(/fuentes/yellow_jacket/YELLOW.TTF);  
   }
 }
 
 body {
+
+  .menu_tres_barras {
+    width: 24px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999;
+    position: absolute;
+    right: 40px;
+    top: 22px;
+    span {
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+    }
+  }
+
+
   background-color: #191D0E;
+
+  .bloque_completo_de_menu_desplegable{
+    display: none;
+    height: 100vh;
+    background-color: #141800;
+    z-index: 1000;
+    color: #fff;
+    padding: 0px 40px;
+    transition: 0.5s;
+    .div_con_p_de_menu_y_la_x_del_menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 4rem;
+      p{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      nav {
+        display: none;
+  
+        ul {
+          li {
+            list-style: none;
+  
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+  
+      
+    }
+    .div_del_primer_hr_de_menu_movil{
+      hr{
+        background-image: linear-gradient(to right, transparent, #fff, transparent);
+          height: 2px;
+          border: 0 solid #e5e7eb;
+      }
+    }
+    .div_de_img_de_LVDA{
+      display: flex;
+      justify-content: center;
+      align-content: center ;
+      img{
+        filter: drop-shadow(0px 0px 25px rgba(213, 255, 0, .25));
+        max-width: 15rem;
+        margin: 1rem 0rem;
+      }
+    }
+    .hr_de_debajo_LVDA{
+      background-image: linear-gradient(to right, transparent, #fff, transparent);
+          height: 2px;
+          border: 0 solid #e5e7eb;
+    }
+    nav{
+      ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .hr_entre_li{
+          width: 100%;
+          background-image: linear-gradient(to right, transparent, #fff, transparent);
+          height: 2px;
+          border: 0 solid #e5e7eb;
+        }
+        li{
+          list-style: none;
+          color: rgb(212 212 212);
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 1.3rem 0rem;
+          font-size: 1.1rem;
+          line-height: 1.75rem;
+          box-sizing: border-box;
+          a{
+            text-decoration: none;
+            color: rgb(212 212 212);
+          }
+        }
+        
+      }
+    }
+    .div_de_copiright_de_menu_desplegable{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 26.8px;
+      p{
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(212 212 212);
+      }
+    }
+    .div_de_redes_sociales_de_menu_desplegable{
+        padding-bottom: 80px;
+        nav{
+          
+          ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 1.5rem;
+            li{
+              display: block;
+              width: fit-content;
+              a{
+                figure{
+                  width: fit-content;
+                  .svg_de_instragram_uno{
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    width: 42px;
+                    height: 42px;
+                  }
+                }
+              }
+            }
+            li{
+              a{
+                figure{
+                  width: fit-content;
+                  .svg_de_twitter{
+                    width: 42px;
+                    height: 42px;
+                  }
+                }
+              }
+            }
+            li{
+              a{
+                figure{
+                  width: fit-content;
+                  .svg_de_github{
+                    width: 42px;
+                    height: 42px;
+                    path{
+                      transform: scale(0.4);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .div_de_redes_sociales_de_menu_desplegable{
+        padding-bottom: 80px;
+        nav{
+          margin-top: 2.5rem;
+          ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 1.5rem;
+            li{
+              display: block;
+              width: fit-content;
+              margin: 0px ;
+              a{
+                figure{
+                  width: fit-content;
+                  .svg_de_instragram_uno{
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    width: 42px;
+                    height: 42px;
+                  }
+                }
+              }
+            }
+            li{
+              a{
+                figure{
+                  width: fit-content;
+                  .svg_de_twitter{
+                    width: 42px;
+                    height: 42px;
+                  }
+                }
+              }
+            }
+            li{
+              a{
+                figure{
+                  width: fit-content;
+                  .svg_de_github{
+                    width: 42px;
+                    height: 42px;
+                    path{
+                      transform: scale(0.4);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+
 
   header {
     padding: 0px 40px;
@@ -26,34 +250,9 @@ body {
       }
     }
 
-    nav {
-      display: none;
+    
 
-      ul {
-        li {
-          list-style: none;
-
-          a {
-            text-decoration: none;
-          }
-        }
-      }
-    }
-
-    .menu_tres_barras {
-      width: 24px;
-      height: 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      span {
-        width: 100%;
-        height: 2px;
-        background-color: #fff;
-      }
-    }
-
+  
     .div_de_svg_velada_reducido {
       background-color: #191D0E;
       position: absolute;
@@ -111,7 +310,7 @@ body {
       .a_de_seccion_uno_twitch {
         color: #fff;
         text-decoration: none;
-        font-family: "yellow_jacket";
+        font-family: "yellow_jacket", Yellowjacket Expanded;
         transform: rotate(-6deg);
         font-size: 1.5rem;
         margin-bottom: 20px;
@@ -200,7 +399,7 @@ body {
 
         h3 {
           color: #b4cd02;
-          font-family: "yellow_jacket";
+          font-family: "yellow_jacket", Yellowjacket Expanded;
           font-size: 4rem;
           line-height: 1;
           text-align: center;
@@ -247,7 +446,7 @@ body {
               bottom: 2.5rem;
 
               p {
-                font-family: "yellow_jacket";
+                font-family: "yellow_jacket", Yellowjacket Expanded;
                 color: #b4cd02;
                 font-size: 3.75rem;
                 line-height: 1;
@@ -408,7 +607,7 @@ body {
             align-items: center;
             span{
               color : #fff;
-              font-family: "yellow_jacket";
+              font-family: "yellow_jacket", Yellowjacket Expanded;
               font-size: 30px;
               transform: rotate(-6deg);
             }
@@ -442,6 +641,7 @@ body {
           text-align: center;
           font-size: 1.25rem;
           margin-top: 16px;
+          font-weight: normal;
         }
         .div_con_todas_las_marcas{
           margin-top: 48px;
@@ -486,6 +686,85 @@ body {
     }
     footer{
       height: 300px;
+      color: rgb(212 212 212);
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 80px;
+      
+      .div_de_copyright_con_los_palitos_degradados{
+        .primer_hr_de_copyright{
+          background-image: linear-gradient(to right, transparent, #fff, transparent);
+          height: 2px;
+          border: 0 solid #e5e7eb;
+        }
+        .copyright{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 1.25rem;
+          padding-top: 56px;
+          padding-bottom: 80px;
+        }
+        .segundo_hr_de_copyright{
+          background-image: linear-gradient(to right, transparent, #fff, transparent);
+          height: 2px;
+         border: 0 solid #e5e7eb;
+         margin-bottom: 48px;
+        }
+      }
+      .div_de_ultima_parte_de_footer_que_tiene_redes_sociales{
+        padding-bottom: 80px;
+        nav{
+          
+          ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 1.5rem;
+            li{
+              display: block;
+              width: fit-content;
+              a{
+                figure{
+                  width: fit-content;
+                  .svg_de_instragram_uno{
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    width: 42px;
+                    height: 42px;
+                  }
+                }
+              }
+            }
+            li{
+              a{
+                figure{
+                  width: fit-content;
+                  .svg_de_twitter{
+                    width: 42px;
+                    height: 42px;
+                  }
+                }
+              }
+            }
+            li{
+              a{
+                figure{
+                  width: fit-content;
+                  .svg_de_github{
+                    width: 42px;
+                    height: 42px;
+                    path{
+                      transform: scale(0.4);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

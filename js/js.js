@@ -150,4 +150,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+
+    const btnMenu = document.querySelector(".menu_tres_barras");
+const menu = document.querySelector(".bloque_completo_de_menu_desplegable");
+
+btnMenu.addEventListener("click", function() {
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+        menu.style.translate = "0.5";
+    } else {
+        menu.style.display = "block";
+    }
+});
+
+
 });
