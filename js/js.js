@@ -186,7 +186,7 @@ btnMenu.addEventListener("click", function() {
         barra_dos.style.opacity = "1";
         barra_tres.style.opacity = "1";
 
-        
+        btnMenu.style.position = "absolute";
 
         menu.style.position = "absolute";
 
