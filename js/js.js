@@ -161,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const barra_cuatro = document.querySelector(".barra_cuatro_de_menu_desplegable");
 
 
+    menu.style.opacity = "0";
 
 btnMenu.addEventListener("click", function() {
     if (menu.style.opacity === "0") {
@@ -168,6 +169,8 @@ btnMenu.addEventListener("click", function() {
 
         menu.style.visibility = "visible";
         menu.style.position = "fixed";
+
+        btnMenu.style.position = "fixed";
 
         barra_dos.style.opacity = "0";
         barra_tres.style.opacity = "0";
@@ -179,8 +182,11 @@ btnMenu.addEventListener("click", function() {
 
     } else {
         menu.style.opacity = "0";
+        
         barra_dos.style.opacity = "1";
         barra_tres.style.opacity = "1";
+
+        
 
         menu.style.position = "absolute";
 
