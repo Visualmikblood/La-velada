@@ -167,6 +167,7 @@ btnMenu.addEventListener("click", function() {
         menu.style.opacity = "1";
 
         menu.style.visibility = "visible";
+        menu.style.position = "fixed";
 
         barra_dos.style.opacity = "0";
         barra_tres.style.opacity = "0";
@@ -180,6 +181,8 @@ btnMenu.addEventListener("click", function() {
         menu.style.opacity = "0";
         barra_dos.style.opacity = "1";
         barra_tres.style.opacity = "1";
+
+        menu.style.position = "absolute";
 
         barra_uno.style.transform = "rotate(0deg) translate(0, 0)";
         barra_cuatro.style.transform = "rotate(0deg) translate(0, 0)";
