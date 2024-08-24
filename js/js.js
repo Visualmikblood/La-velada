@@ -151,16 +151,38 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
+// aqui empieza el codigo de el menu desplegable de version movil
     const btnMenu = document.querySelector(".menu_tres_barras");
-const menu = document.querySelector(".bloque_completo_de_menu_desplegable");
+    const menu = document.querySelector(".bloque_completo_de_menu_desplegable");
+
+    const barra_uno = document.querySelector(".barra_uno_de_menu_desplegable");
+    const barra_dos = document.querySelector(".barra_dos_de_menu_desplegable");
+    const barra_tres = document.querySelector(".barra_tres_de_menu_desplegable");
+    const barra_cuatro = document.querySelector(".barra_cuatro_de_menu_desplegable");
+
+
 
 btnMenu.addEventListener("click", function() {
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-        menu.style.translate = "0.5";
+    if (menu.style.opacity === "0") {
+        menu.style.opacity = "1";
+
+        menu.style.visibility = "visible";
+
+        barra_dos.style.opacity = "0";
+        barra_tres.style.opacity = "0";
+
+        barra_uno.style.transform = "rotate(45deg) translate(6px, 4px)";
+        barra_cuatro.style.transform = "rotate(-45deg) translate(8px, -6px)";
+        
+
+
     } else {
-        menu.style.display = "block";
+        menu.style.opacity = "0";
+        barra_dos.style.opacity = "1";
+        barra_tres.style.opacity = "1";
+
+        barra_uno.style.transform = "rotate(0deg) translate(0, 0)";
+        barra_cuatro.style.transform = "rotate(0deg) translate(0, 0)";
     }
 });
 
