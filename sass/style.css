@@ -268,7 +268,7 @@ body .main .seccion_uno #equis_grande {
   height: 291px;
   margin-top: 50px;
 }
-body .main .seccion_uno .a_de__twitch {
+body .main .seccion_uno .a_de_seccion_uno_twitch {
   color: #fff;
   text-decoration: none;
   font-family: "yellow_jacket", Yellowjacket Expanded;
@@ -436,6 +436,10 @@ body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .slider
 }
 body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .slider_de_cada_boxeador_y_las_flechas_de_abajo .div_con_todos_los_boxeadores_sin_las_flechas .div_de_los_luchadores_con_foto_y_fondo figure {
   width: 70%;
+  /*img {
+
+   //esto es un comentario para ver como funciona las actualizaciones en github 
+  }*/
 }
 body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .slider_de_cada_boxeador_y_las_flechas_de_abajo .div_con_todos_los_boxeadores_sin_las_flechas .div_de_los_luchadores_con_foto_y_fondo figure .imagenes_slider {
   width: 149px;
@@ -687,6 +691,14 @@ body .main footer .div_de_ultima_parte_de_footer_que_tiene_redes_sociales nav ul
     width: 500px;
     height: 500px;
   }
+  body .main .seccion_dos .primera_seccion_de_main {
+    /*p{
+
+    }
+    .bernabeu{
+
+    }*/
+  }
   body .main .seccion_dos .primera_seccion_de_main .div_de_botones_primera_seccion_de_main {
     display: flex;
     justify-content: center;
@@ -762,41 +774,47 @@ body .main footer .div_de_ultima_parte_de_footer_que_tiene_redes_sociales nav ul
     display: flex;
     flex-direction: column;
   }
-  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .primera_columna_de_luchadores a {
+  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .primera_columna_de_luchadores .a_de_fotos_de_luchadores_tablet {
     width: 112px;
     height: 112px;
     position: relative;
+    margin-bottom: 8px;
   }
-  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .primera_columna_de_luchadores a .medio_fondo_gris_de_imgs_de_luchadores {
+  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .primera_columna_de_luchadores .a_de_fotos_de_luchadores_tablet .medio_fondo_gris_de_imgs_de_luchadores {
     background: linear-gradient(#fff 0%, rgba(255, 255, 255, 0.5019607843) 30%, rgba(0, 0, 0, 0) 95%);
     width: 100%;
     height: 60%;
     position: absolute;
+    opacity: 0.25;
   }
-  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .primera_columna_de_luchadores a img {
+  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .primera_columna_de_luchadores .a_de_fotos_de_luchadores_tablet img {
     width: 100%;
     height: 100%;
     position: absolute;
+    filter: grayscale(100%);
   }
   body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .segunda_columna_de_luchadores {
     display: flex;
     flex-direction: column;
   }
-  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .segunda_columna_de_luchadores a {
+  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .segunda_columna_de_luchadores .a_de_fotos_de_luchadores_tablet {
     width: 112px;
     height: 112px;
     position: relative;
+    margin-bottom: 8px;
   }
-  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .segunda_columna_de_luchadores a .medio_fondo_gris_de_imgs_de_luchadores {
+  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .segunda_columna_de_luchadores .a_de_fotos_de_luchadores_tablet .medio_fondo_gris_de_imgs_de_luchadores {
     background: linear-gradient(#fff 0%, rgba(255, 255, 255, 0.5019607843) 30%, rgba(0, 0, 0, 0) 95%);
     width: 100%;
     height: 60%;
     position: absolute;
+    opacity: 0.25;
   }
-  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .segunda_columna_de_luchadores a img {
+  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .div_con_todos_los_luchadores_en_vertical .primer_nav_de_luchadores_en_vertical .segunda_columna_de_luchadores .a_de_fotos_de_luchadores_tablet img {
     width: 100%;
     height: 100%;
     position: absolute;
+    filter: grayscale(100%);
   }
   body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical {
     display: flex;
@@ -809,41 +827,47 @@ body .main footer .div_de_ultima_parte_de_footer_que_tiene_redes_sociales nav ul
     display: flex;
     flex-direction: column;
   }
-  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical .tercera_columna_de_luchadores a {
+  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical .tercera_columna_de_luchadores .a_de_fotos_de_luchadores_tablet {
     width: 112px;
     height: 112px;
     position: relative;
+    margin-bottom: 8px;
   }
-  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical .tercera_columna_de_luchadores a .medio_fondo_gris_de_imgs_de_luchadores {
+  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical .tercera_columna_de_luchadores .a_de_fotos_de_luchadores_tablet .medio_fondo_gris_de_imgs_de_luchadores {
     background: linear-gradient(#fff 0%, rgba(255, 255, 255, 0.5019607843) 30%, rgba(0, 0, 0, 0) 95%);
     width: 100%;
     height: 60%;
     position: absolute;
+    opacity: 0.25;
   }
-  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical .tercera_columna_de_luchadores a img {
+  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical .tercera_columna_de_luchadores .a_de_fotos_de_luchadores_tablet img {
     width: 100%;
     height: 100%;
     position: absolute;
+    filter: grayscale(100%);
   }
   body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical .cuarta_columna_de_luchadores {
     display: flex;
     flex-direction: column;
   }
-  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical .cuarta_columna_de_luchadores a {
+  body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical .cuarta_columna_de_luchadores .a_de_fotos_de_luchadores_tablet {
     width: 112px;
     height: 112px;
     position: relative;
+    margin-bottom: 8px;
   }
   body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical .cuarta_columna_de_luchadores .medio_fondo_gris_de_imgs_de_luchadores {
     background: linear-gradient(#fff 0%, rgba(255, 255, 255, 0.5019607843) 30%, rgba(0, 0, 0, 0) 95%);
     width: 100%;
     height: 60%;
     position: absolute;
+    opacity: 0.25;
   }
   body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet .segundo_nav_de_luchadores_en_vertical .cuarta_columna_de_luchadores img {
     width: 100%;
     height: 100%;
     position: absolute;
+    filter: grayscale(100%);
   }
 }
 

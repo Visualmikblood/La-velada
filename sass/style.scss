@@ -313,7 +313,7 @@ body {
         margin-top: 50px;
       }
 
-      .a_de__twitch {
+      .a_de_seccion_uno_twitch {
         color: #fff;
         text-decoration: none;
         font-family: "yellow_jacket", Yellowjacket Expanded;
@@ -450,7 +450,6 @@ body {
               flex-direction: column;
               align-items: center;
               bottom: 2.5rem;
-
               p {
                 font-family: "yellow_jacket", Yellowjacket Expanded;
                 color: #b4cd02;
@@ -501,10 +500,10 @@ body {
                   
                   width: 70%;
                   
-                  img {
+                  /*img {
                     
                    //esto es un comentario para ver como funciona las actualizaciones en github 
-                  }
+                  }*/
                   .imagenes_slider{
                     width: 149px;
                     min-height: 149px;
@@ -801,12 +800,12 @@ body {
       }
       .seccion_dos{
         .primera_seccion_de_main{
-          p{
+          /*p{
 
           }
           .bernabeu{
 
-          }
+          }*/
           .div_de_botones_primera_seccion_de_main{
             display: flex;
             justify-content: center;
@@ -875,20 +874,23 @@ body {
                   .primera_columna_de_luchadores{
                     display: flex;
                     flex-direction: column;
-                    a{
+                    .a_de_fotos_de_luchadores_tablet{
                       width: 112px;
                       height: 112px;
                       position: relative;
+                      margin-bottom: 8px;
                       .medio_fondo_gris_de_imgs_de_luchadores{
                         background: linear-gradient(#fff 0%, #ffffff80 30%, #0000 95%);
                         width: 100%;
                         height: 60%;
                         position: absolute;
+                        opacity: .25;
                       }
                       img{
                         width: 100%;
                         height: 100%;
                         position: absolute;
+                        filter: grayscale(100%);
                       }
                       }
                       
@@ -896,20 +898,24 @@ body {
                     .segunda_columna_de_luchadores{
                       display: flex;
                       flex-direction: column;
-                      a{
+                      .a_de_fotos_de_luchadores_tablet{
                         width: 112px;
                         height: 112px;
                         position: relative;
+                        margin-bottom: 8px;
                         .medio_fondo_gris_de_imgs_de_luchadores{
                           background: linear-gradient(#fff 0%, #ffffff80 30%, #0000 95%);
                           width: 100%;
                           height: 60%;
                           position: absolute;
+                          opacity: .25;
                         }
                         img{
                           width: 100%;
                           height: 100%;
                           position: absolute;
+                          filter: grayscale(100%);
+                          
                         }
                       }
                     }
@@ -924,20 +930,23 @@ body {
                   .tercera_columna_de_luchadores{
                     display: flex;
                     flex-direction: column;
-                    a{
+                    .a_de_fotos_de_luchadores_tablet{
                       width: 112px;
                       height: 112px;
                       position: relative;
+                      margin-bottom: 8px;
                       .medio_fondo_gris_de_imgs_de_luchadores{
                         background: linear-gradient(#fff 0%, #ffffff80 30%, #0000 95%);
                         width: 100%;
                         height: 60%;
                         position: absolute;
+                        opacity: .25;
                       }
                       img{
                         width: 100%;
                         height: 100%;
                         position: absolute;
+                        filter: grayscale(100%);
                       }
                     }
                     
@@ -945,21 +954,24 @@ body {
                   .cuarta_columna_de_luchadores{
                     display: flex;
                     flex-direction: column;
-                    a{
+                    .a_de_fotos_de_luchadores_tablet{
                       width: 112px;
                       height: 112px;
                       position: relative;
+                      margin-bottom: 8px;
                     }
                     .medio_fondo_gris_de_imgs_de_luchadores{
                       background: linear-gradient(#fff 0%, #ffffff80 30%, #0000 95%);
                         width: 100%;
                         height: 60%;
                         position: absolute;
+                        opacity: .25;
                     }
                     img{
                       width: 100%;
                       height: 100%;
                       position: absolute;
+                      filter: grayscale(100%);
                     }
                   }
                 }

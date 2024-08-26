@@ -196,4 +196,30 @@ btnMenu.addEventListener("click", function() {
 });
 
 
+//aqui empieza la seleccion de boxeadores para tablet y pc
+
+const imgs_columnas = document.querySelectorAll('.a_de_fotos_de_luchadores_tablet img');
+const img_grande = document.querySelector('.img_grande_luchadores_tablet');
+const nombre_luchador = document.querySelector('.nombre_luchador');
+const bandera_luchador = document.querySelector('.banderas_para_tablet');
+
+imgs_columnas.forEach(img => {
+    img.addEventListener("mouseover", function() {
+        const bigImgSrc = img.getAttribute("data-big");
+        const luchadorName = img.getAttribute("data-name");
+        const flagSrc = img.getAttribute("data-flag");
+        img_grande.setAttribute("src", bigImgSrc);
+        img.style.filter = "grayscale(0%)";
+        nombre_luchador.textContent = luchadorName;
+        bandera_luchador.setAttribute("src", flagSrc);
+
+        // Poner todas las demás imágenes en escala de grises
+        imgs_columnas.forEach(otherImg => {
+            if (otherImg !== img) {
+                otherImg.style.filter = "grayscale(100%)";
+            }
+        });
+    });
+});
+
 });
