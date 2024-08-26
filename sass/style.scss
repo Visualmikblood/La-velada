@@ -313,7 +313,7 @@ body {
         margin-top: 50px;
       }
 
-      .a_de_seccion_uno_twitch {
+      .a_de__twitch {
         color: #fff;
         text-decoration: none;
         font-family: "yellow_jacket", Yellowjacket Expanded;
@@ -476,8 +476,8 @@ body {
             margin-top: 32px;
             .div_con_todos_los_boxeadores_sin_las_flechas {
               scroll-snap-type: x mandatory;
-              padding-left: 140px;
-              padding-right: 140px;
+              padding-left: 50%;
+              padding-right: 50%;
               display: flex;
               overflow-x: scroll;
               gap: 20px;
@@ -518,6 +518,9 @@ body {
               }
             }
           }
+        }
+        .seleccion_de_boxeador_tablet{
+          display: none;
         }
       }
 
@@ -773,7 +776,206 @@ body {
       }
     }
   }
-}
+
+  //AQUI EMPIEZA LA VERSION TABLET 768PX
+
+  @media (min-width: 768px){
+
+    //AQUI EMPIEZA EL MAIN DE VERSION TABLET
+
+    .main{
+      .seccion_uno{
+        #equis_grande{
+          width: 500px;
+          height: 500px;
+        }
+        .a_de__twitch{
+          font-size: 2.25rem;
+        }
+        .icono_ampliado{
+          svg{
+            width: 500px;
+          height: 500px;
+          }
+        }
+      }
+      .seccion_dos{
+        .primera_seccion_de_main{
+          p{
+
+          }
+          .bernabeu{
+
+          }
+          .div_de_botones_primera_seccion_de_main{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 763px;
+            gap: 2.25rem;
+            row-gap: 0px;
+            .boton_agotado_y_notificacion{
+              .botones{
+                height: fit-content
+              }
+            }
+            .botones{
+              height: fit-content;
+            }
+          }
+        }
+        .segunda_seccion_del_main{
+          h3{
+            font-size: 3rem;
+          }
+          p{
+            font-size: 1.25rem;
+          } 
+          .seleccion_de_boxeador{
+            display: none;
+          }
+          .seleccion_de_boxeador_tablet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            picture{
+              display: flex;
+              width: 460px;
+              justify-content: center;
+              img{
+                width: 460px;
+                object-fit: contain;
+                }
+              }
+              .div_de_nombre_y_bandera_de_boxeadores_version_tablet{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h4{
+                  font-size: 4.5rem;
+                  font-family: "yellow_jacket", Yellowjacket Expanded;
+                  color: #b4cd02;
+                }
+                img{
+                  mask-image: url(https://cdn.lavelada.dev/flags/maskflag.webp);
+                  mask-size: contain;
+                  mask-repeat: no-repeat;
+                }
+              }
+              .div_con_todos_los_luchadores_en_vertical{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                position: absolute;
+                .primer_nav_de_luchadores_en_vertical{
+                  display: flex;
+                  height: fit-content;
+                  align-items: center;
+                  gap: 1rem;
+                  .primera_columna_de_luchadores{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                      width: 112px;
+                      height: 112px;
+                      position: relative;
+                      .medio_fondo_gris_de_imgs_de_luchadores{
+                        background: linear-gradient(#fff 0%, #ffffff80 30%, #0000 95%);
+                        width: 100%;
+                        height: 60%;
+                        position: absolute;
+                      }
+                      img{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                      }
+                      }
+                      
+                    }
+                    .segunda_columna_de_luchadores{
+                      display: flex;
+                      flex-direction: column;
+                      a{
+                        width: 112px;
+                        height: 112px;
+                        position: relative;
+                        .medio_fondo_gris_de_imgs_de_luchadores{
+                          background: linear-gradient(#fff 0%, #ffffff80 30%, #0000 95%);
+                          width: 100%;
+                          height: 60%;
+                          position: absolute;
+                        }
+                        img{
+                          width: 100%;
+                          height: 100%;
+                          position: absolute;
+                        }
+                      }
+                    }
+                  }
+                  
+                }
+                .segundo_nav_de_luchadores_en_vertical{
+                  display: flex;
+                  height: fit-content;
+                  align-items: center;
+                  gap: 1rem;
+                  .tercera_columna_de_luchadores{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                      width: 112px;
+                      height: 112px;
+                      position: relative;
+                      .medio_fondo_gris_de_imgs_de_luchadores{
+                        background: linear-gradient(#fff 0%, #ffffff80 30%, #0000 95%);
+                        width: 100%;
+                        height: 60%;
+                        position: absolute;
+                      }
+                      img{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                      }
+                    }
+                    
+                  }
+                  .cuarta_columna_de_luchadores{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                      width: 112px;
+                      height: 112px;
+                      position: relative;
+                    }
+                    .medio_fondo_gris_de_imgs_de_luchadores{
+                      background: linear-gradient(#fff 0%, #ffffff80 30%, #0000 95%);
+                        width: 100%;
+                        height: 60%;
+                        position: absolute;
+                    }
+                    img{
+                      width: 100%;
+                      height: 100%;
+                      position: absolute;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+  
+
+
+
+
+
 
 #layer1 {
   --color-accent: #b4cd02;
