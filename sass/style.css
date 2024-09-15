@@ -360,6 +360,9 @@ body .main .seccion_dos .segunda_seccion_del_main p {
 body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador {
   margin-top: 32px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .foto_grande_nombre_y_bandera {
   position: relative;
@@ -449,6 +452,15 @@ body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .slider
 }
 body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .slider_de_cada_boxeador_y_las_flechas_de_abajo .div_con_todos_los_boxeadores_sin_las_flechas .div_de_los_luchadores_con_foto_y_fondo figure .imagenes_slider.en-centro {
   filter: grayscale(0%);
+}
+body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador .flechas {
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  fill: none;
+  width: 67.93px;
+  height: 28.65px;
 }
 body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet {
   display: none;
@@ -728,6 +740,9 @@ body .main footer .div_de_ultima_parte_de_footer_que_tiene_redes_sociales nav ul
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1072px;
   }
   body .main .seccion_dos .segunda_seccion_del_main .seleccion_de_boxeador_tablet picture {
     display: flex;

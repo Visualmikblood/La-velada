@@ -422,6 +422,9 @@ body {
         .seleccion_de_boxeador {
           margin-top: 32px;
           width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           .foto_grande_nombre_y_bandera {
             position: relative;
             display: flex;
@@ -517,6 +520,16 @@ body {
               }
             }
           }
+          .flechas{
+              stroke: currentColor;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-width: 2px;
+              fill: none;
+              
+              width: 67.93px;
+              height: 28.65px;
+          } 
         }
         .seleccion_de_boxeador_tablet{
           display: none;
@@ -832,11 +845,15 @@ body {
           } 
           .seleccion_de_boxeador{
             display: none;
+            
           }
           .seleccion_de_boxeador_tablet{
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
+            width: 100%;
+            max-width: 1072px;
             picture{
               display: flex;
               width: 460px;
